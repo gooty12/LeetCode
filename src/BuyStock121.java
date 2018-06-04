@@ -15,4 +15,22 @@ public class BuyStock121 {
 
             return res;
         }
-}
+
+        // O(1) space.
+        public int maxProfit2(int[] prices) {
+            int res = 0;
+            if (prices.length != 0) {
+                int buy = prices[0];
+                for (int p : prices) {
+                    if (p > buy) {
+                        res = Math.max(res, p-buy);
+                    }
+                    else {
+                        buy = p;
+                    }
+                }
+            }
+            return res;
+        }
+    }
+

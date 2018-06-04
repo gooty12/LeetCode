@@ -1,7 +1,7 @@
 import java.util.Deque;
 import java.util.LinkedList;
 
-public class PalindromeNumber {
+public class PalindromeNumber09 {
 
     public boolean isPalindrome(int x) {
         boolean ans;
@@ -28,6 +28,30 @@ public class PalindromeNumber {
                     }
                 }
             }
+        }
+
+        return ans;
+    }
+
+    public boolean isPalindrome2(int x) {
+        boolean ans;
+        if (x < 0) {
+            ans = false;
+        }
+        else if (x < 10) {
+            ans = true;
+        }
+        else if (x % 10 == 0) {
+            ans = false;
+        }
+        else {
+            int num1 = x;
+            int num2 = 0;
+            while (num2 < num1) {
+                num2 = num2*10 + num1%10;
+                num1 /= 10;
+            }
+            ans = ((num1 == num2) || (num1 == num2/10));
         }
 
         return ans;
