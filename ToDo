@@ -1,3 +1,11 @@
 Problems:
 
 #58 #66 #67 #69 #70 - Do these
+#453 - Minimum moves to equal array elements
+Difference between >> and >>> bit shift operators in java. ( n > 0 and n != 0 difference??)
+#459 - repeated substring best solution : 1/2 1/3 and l = 1... How does this work?
+
+Lessons learnt:
+
+1. Map avoids sort and reduce the runtime by an order (n^2 -> n for e.g.). In case of integers, map does lookup in constant time.
+2.
