@@ -53,7 +53,7 @@ better at using your IDE's debugger.
 , integer overflow, etc.
 
 #### 100 Easy Problems Revision:
-- Linkied Lists : Reversing a linked list (prev, curr), fast and slow pointers,
+- Linked Lists : Reversing a linked list (prev, curr), fast and slow pointers,
 palindrome (fast/slow gives mid, reverse from mid and check if equal), delete
 given just that node.
 - Trees: symmetric, depth, root-to-leaf paths, etc. all by recursion
@@ -75,3 +75,15 @@ given just that node.
  divisors, prime factors, primes, etc).
  - Two-players: both play optimally, so you will easily get a pattern (N % p),
  try out for the first few cases.
+ 
+ #### 100 Medium Problems Revision:
+ - LongestPalindrome Substring: In these cases, convert the sub problem to
+ isPlaindrome(i, j) = isPalindrome(i+1, j-1) || isPlaindrome(i+1, j) ||
+ isPlaindrome(i, j-1). You need to know the start and end indices of the
+ subproblem too.
+ - Two pointer approach : Problem #8 -> Start with two pointers, one at each 
+ end of the array, and update one of them carefully.
+ - TwoSum, 3Sum, 4Sum : use map for 2Sum, gives O(n). 3Sum, 4Sum, 3SumClosest
+ all can benefit from sorting since it takes O(n^2) anyway. Sort and then use
+ 2 pointers approach. To avoid duplicates always consider triples with indices
+ i <= j <= k.
