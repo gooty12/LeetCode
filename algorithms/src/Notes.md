@@ -19,9 +19,9 @@
  Look at top submissions, learn from them.
  
  #### Debugging
- 1. Check if the edge cases, as identified while reading the problem statement
+ 1. Check if the edge cases, as identified while reading the problem statement,
  run correctly.
- 2. Implementations introduce new corener cases. This is almost always true for
+ 2. Implementations introduce new corner cases. This is almost always true for
  _for-loops_.
  <pre>
  // what happened to i == 0? Did you set the initial result and 'b'?
@@ -41,9 +41,9 @@
  // You reach here in two states, l >= list.length() or when b <= 0.
  // Take care of both cases, and updates are to be made accordingly.
 </pre>
-3. If your code still doesn't work, and you fell your logic is "_correct_",
+3. If your code still doesn't work, and you feel your logic is "_correct_",
 start from line #1 and ask **"WHY"** that line of code is correct. Have a 
-flxeible mindset, be ready to tear apart your whole logic, accept your mistakes
+flexible mindset, be ready to tear apart your whole logic, accept your mistakes
 and correct them. Never panic, spoil your mood. There are other problems to be
 solved, just MOVE ON.
 4. Improve you debugging skills, pinpoint the error, then identify the root
