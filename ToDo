@@ -1,14 +1,4 @@
 Problems:
 
-#58 #66 #67 #69 #70 - Do these
-#459 - repeated substring best solution : 1/2 1/3 and l = 1... How does this work?
-
-#437 - PathSumIII (All paths (not necessarily root-to-leaf) that add up to a target)
-
-Revise medium problems
-
-Contest - 90, 91, 92
-#857 - Cost for K-workers
-#858 - Mirror Reflection
-#862 - Shortest subarray with sum at least K
+#406 Queue Reconstruction by height
 
